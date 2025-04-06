@@ -1,1 +1,13 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+  --bs-primary: #064ea4;
+  --bs-secondary: #fcdf69;
+  --bs-tertiary-color: #f99d76;
+  --bs-primary-rgb: 6, 78, 164;
+  --bs-secondary-rgb: 252, 223, 105;
+  --bs-tertiary-color-rgb: 249, 157, 118;
+
+  --bs-tertiary-bg: #f99d76;
+  --bs-tertiary-bg-rgb: 249, 157, 118;
+}

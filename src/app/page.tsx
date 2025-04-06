@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="container mt-5">
-      <h1 className="text-center">Welcome to My Bootstrap Test Page!</h1>
+      <h1 className="text-center mt-5">Welcome to My Bootstrap Test Page!</h1>
 
       <div className="row mt-4">
         <div className="col-md-4">
