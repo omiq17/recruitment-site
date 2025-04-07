@@ -6,13 +6,15 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:styles": "sass src/styles/custom.scss public/styles/custom.css"
   },
   "dependencies": {
     "bootstrap": "^5.3.5",
     "next": "15.2.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "sass": "^1.86.3"
   },
   "devDependencies": {
     "@types/node": "^20",

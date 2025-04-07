@@ -2,7 +2,7 @@ export default function Navbar() {
   return (
     <div className="container-fluid">
       <div className="container" style={{ maxWidth: "1200px" }}>
-        <nav className="navbar navbar-expand-lg bg-secondary">
+        <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
               Software Recruitment Co.
@@ -72,11 +72,11 @@ export default function Navbar() {
               </ul>
 
               <div>
-                <button type="button" className="btn btn-primary">
-                  Primary
-                </button>
                 <button type="button" className="btn btn-secondary">
                   Secondary
+                </button>
+                <button type="button" className="btn btn-warning">
+                  Warning
                 </button>
               </div>
             </div>
