@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
-    <div className="container-fluid">
-      <div className="container" style={{ maxWidth: "1200px" }}>
+    <div className="container-fluid ">
+      <div className="container-fluid g-0" style={{ maxWidth: "1200px" }}>
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
@@ -71,12 +71,12 @@ export default function Navbar() {
                 </li>
               </ul>
 
-              <div>
+              <div className="d-flex gap-2">
                 <button type="button" className="btn btn-secondary">
-                  Secondary
+                  Upload CV
                 </button>
                 <button type="button" className="btn btn-warning">
-                  Warning
+                  Contact us
                 </button>
               </div>
             </div>

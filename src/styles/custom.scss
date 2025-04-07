@@ -3,5 +3,7 @@
 @use "../../node_modules/bootstrap/scss/bootstrap.scss" with (
   $primary: $primary,
   $secondary: $secondary,
-  $warning: $warning
+  $warning: $warning,
+  $border-radius: $border-radius,
+  $btn-font-weight: $btn-font-weight
 );
