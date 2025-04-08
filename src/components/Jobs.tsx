@@ -91,7 +91,7 @@ const Jobs = () => {
           ))}
         </div>
 
-        <div className="slider-footer mt-3">
+        <div className="mt-3 d-flex justify-content-between align-items-center">
           <div className="arrow-controls">
             <button
               className="btn btn-outline-primary me-2"
@@ -107,9 +107,14 @@ const Jobs = () => {
             </button>
           </div>
 
-          <a href="/jobs" className="btn btn-primary">
-            View More Jobs
-          </a>
+          <p>
+            <a
+              href="#"
+              className="link-underline-light text-dark m-0 fw-medium lh-base fh-6"
+            >
+              View more jobs
+            </a>
+          </p>
         </div>
       </div>
     </div>

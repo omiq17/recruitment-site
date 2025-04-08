@@ -2,6 +2,7 @@ $primary: #064ea4;
 $secondary: #fcdf69;
 $warning: #f99d76;
 $info: #0e2152;
+$dark: #0e2152;
 
 $btn-border-radius: 1.875rem;
 $card-border-radius: 1.875rem;
@@ -50,6 +51,8 @@ $spacers: (
   10: $spacer * 0.625,
   // 20px
   20: $spacer * 1.25,
+  // 30px
+  30: $spacer * 1.875,
   // 40px
   40: $spacer * 2.5,
 );
