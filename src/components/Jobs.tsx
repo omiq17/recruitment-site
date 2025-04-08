@@ -35,7 +35,7 @@ const Jobs = () => {
               <div
                 className={`card-body p-0 ${getCardTextColor(
                   i
-                )} d-flex flex-column gap-20 m-40`}
+                )} d-flex flex-column gap-3 m-40 justify-content-between`}
               >
                 <h3 className={`card-title m-0`}>{job.title}</h3>
 
