@@ -3,35 +3,47 @@
 import React from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import "./styles/jobs.scss";
 import { JOBS } from "@/lib/data";
 import { MAX_CONTENT_WIDTH } from "@/lib/consts";
+import { getCardBackgroundColor, getCardTextColor } from "@/lib/utils";
+import LocationIcon from "@/assets/LocationIcon";
 
 const Jobs = () => {
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     slides: {
       perView: 3,
-      spacing: 15,
+      spacing: 40,
     },
-    loop: false,
+    loop: true,
   });
 
   return (
     <div className="container-fluid bg-primary-subtle">
       <div
-        className="container-fluid g-0"
+        className="container-fluid g-0 py-6"
         style={{ maxWidth: MAX_CONTENT_WIDTH }}
       >
-        <h2 className="mb-3 text-center">Latest Jobs</h2>
+        <h2 className="mb-4 text-center text-info">Latest Jobs</h2>
 
         <div ref={sliderRef} className="keen-slider">
           {JOBS.map((job, i) => (
-            <div key={i} className="keen-slider__slide card">
-              <div className="card-body">
-                <h5 className="card-title">{job.title}</h5>
-                <p className="card-text">{job.company}</p>
-                <p className="card-text">
-                  <small className="text-muted">{job.location}</small>
+            <div
+              key={i}
+              className={`keen-slider__slide card ${getCardBackgroundColor(i)}`}
+              style={{ padding: "2.5rem" }}
+            >
+              <div className="card-body p-0">
+                <h3 className={`card-title ${getCardTextColor(i)}`}>
+                  {job.title}
+                </h3>
+                <p
+                  className={`card-text ${getCardTextColor(i)} flex m-0`}
+                  style={{ gap: "1.125rem" }}
+                >
+                  <LocationIcon /> <span>{job.location}</span>
+                </p>
+                <p className={`card-text ${getCardTextColor(i)}`}>
+                  {job.description}
                 </p>
               </div>
             </div>

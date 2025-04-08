@@ -20,3 +20,13 @@
     color: darken($body-emphasis-color, 15%);
   }
 }
+
+h1,
+h2,
+h3 {
+  letter-spacing: -1px;
+}
+
+h3 {
+  line-height: 1;
+}
