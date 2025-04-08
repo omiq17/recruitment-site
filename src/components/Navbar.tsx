@@ -35,7 +35,7 @@ export default function Navbar() {
         className="container-fluid g-0"
         style={{ maxWidth: MAX_CONTENT_WIDTH }}
       >
-        <nav className="navbar navbar-expand-lg">
+        <nav className="navbar navbar-expand-lg py-4">
           <div className="container-fluid g-0">
             <a className="navbar-brand" href="#" style={{ marginRight: "5vw" }}>
               Software Recruitment Co.
