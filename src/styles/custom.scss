@@ -10,3 +10,13 @@
     color: darken($primary, 10%);
   }
 }
+
+.nav-link,
+.dropdown-item {
+  color: $body-emphasis-color;
+
+  &:hover,
+  &:focus {
+    color: darken($body-emphasis-color, 15%);
+  }
+}
