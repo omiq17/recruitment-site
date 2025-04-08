@@ -1,12 +1,42 @@
+import { MENU_ITEMS } from "@/lib/consts";
+
+const renderDropdown = (item: MenuItem) => {
+  return (
+    <li className="nav-item dropdown" key={item.name}>
+      <a
+        className="nav-link dropdown-toggle"
+        href={item.link}
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        {item.name}
+      </a>
+      {item.subItems && item.subItems.length && (
+        <ul className="dropdown-menu">
+          {item.subItems.map((subItem) => (
+            <li key={subItem.name}>
+              <a className="dropdown-item" href={subItem.link}>
+                {subItem.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </li>
+  );
+};
+
 export default function Navbar() {
   return (
     <div className="container-fluid ">
       <div className="container-fluid g-0" style={{ maxWidth: "1200px" }}>
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="#" style={{ marginRight: "5vw" }}>
               Software Recruitment Co.
             </a>
+
             <button
               className="navbar-toggler"
               type="button"
@@ -18,57 +48,13 @@ export default function Navbar() {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
+
             <div
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
-                    Home
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Link
-                  </a>
-                </li>
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link disabled" aria-disabled="true">
-                    Disabled
-                  </a>
-                </li>
+                {MENU_ITEMS.map((item) => renderDropdown(item))}
               </ul>
 
               <div className="d-flex gap-2">

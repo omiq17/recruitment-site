@@ -1,9 +1,12 @@
-@use "variables" as *;
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-@use "../../node_modules/bootstrap/scss/bootstrap.scss" with (
-  $primary: $primary,
-  $secondary: $secondary,
-  $warning: $warning,
-  $border-radius: $border-radius,
-  $btn-font-weight: $btn-font-weight
-);
+.navbar-brand {
+  color: $primary;
+  font-weight: 700;
+
+  &:hover,
+  &:focus {
+    color: darken($primary, 10%);
+  }
+}

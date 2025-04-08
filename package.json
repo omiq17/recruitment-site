@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build:styles": "sass src/styles/custom.scss public/styles/custom.css"
+    "build:styles": "sass src/styles/custom.scss public/styles/custom.css",
+    "watch:styles": "sass --watch src/styles/custom.scss:public/styles/custom.css"
   },
   "dependencies": {
     "bootstrap": "^5.3.5",
