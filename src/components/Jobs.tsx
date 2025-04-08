@@ -7,6 +7,7 @@ import { JOBS } from "@/lib/data";
 import { MAX_CONTENT_WIDTH } from "@/lib/consts";
 import { getCardBackgroundColor, getCardTextColor } from "@/lib/utils";
 import LocationIcon from "@/assets/LocationIcon";
+import PoundIcon from "@/assets/PoundIcon";
 
 const Jobs = () => {
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
@@ -30,20 +31,51 @@ const Jobs = () => {
             <div
               key={i}
               className={`keen-slider__slide card ${getCardBackgroundColor(i)}`}
-              style={{ padding: "2.5rem" }}
             >
-              <div className="card-body p-0">
-                <h3 className={`card-title ${getCardTextColor(i)}`}>
-                  {job.title}
-                </h3>
+              <div
+                className={`card-body p-0 ${getCardTextColor(
+                  i
+                )} d-flex flex-column gap-20 m-40`}
+              >
+                <h3 className={`card-title m-0`}>{job.title}</h3>
+
+                <div className={`d-flex flex-column gap-10`}>
+                  <p
+                    className={`card-text d-flex flex-row m-0 fs-6 lh-base gap-10`}
+                  >
+                    <LocationIcon fill="currentColor" />{" "}
+                    <span>{job.location}</span>
+                  </p>
+                  <p
+                    className={`card-text d-flex flex-row m-0 fs-6 lh-base gap-10`}
+                  >
+                    <PoundIcon fill="currentColor" /> <span>{job.salary}</span>
+                  </p>
+                </div>
+
                 <p
-                  className={`card-text ${getCardTextColor(i)} flex m-0`}
-                  style={{ gap: "1.125rem" }}
+                  className={`card-text fs-6 lh-base m-0 overflow-hidden`}
+                  style={{
+                    height: "calc(1.5rem * 4)",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 4,
+                    WebkitBoxOrient: "vertical",
+                  }}
                 >
-                  <LocationIcon /> <span>{job.location}</span>
-                </p>
-                <p className={`card-text ${getCardTextColor(i)}`}>
                   {job.description}
+                </p>
+
+                <button type="button" className="btn btn-light p-0">
+                  <p className="text-primary m-0 fw-medium lh-base fh-6 py-10">
+                    View this job
+                  </p>
+                </button>
+
+                <p
+                  className={`card-text fs-7 lh-base m-0`}
+                  style={{ opacity: 0.8 }}
+                >
+                  Posted on {job.date}
                 </p>
               </div>
             </div>

@@ -16,6 +16,6 @@ export const getCardTextColor = (index: number): string => {
     case 1:
       return "text-white";
     default:
-      return "text-white";
+      return "text-primary";
   }
 };

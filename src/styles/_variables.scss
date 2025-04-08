@@ -10,21 +10,46 @@ $btn-font-weight: 700;
 $body-emphasis-color: #1a1a1a;
 $primary-bg-subtle: #d7e7fb;
 
-$font-size-base: 1rem;
-$h1-font-size: $font-size-base * 4.125;
-$h2-font-size: $font-size-base * 3.5;
-$h3-font-size: $font-size-base * 1.875;
-
 $headings-font-weight: 700;
 $headings-line-height: 1.5;
 
-$spacer: 1rem;
+$font-size-base: 1rem; // 16px
+$h1-font-size: $font-size-base * 4.125; // 66px
+$h2-font-size: $font-size-base * 3.5; // 56px
+$h3-font-size: $font-size-base * 1.875; // 30px
+$h4-font-size: $font-size-base * 1.5; // 24px
+$h5-font-size: $font-size-base * 1.25; // 20px
+$h6-font-size: $font-size-base;
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  // 13px
+  7: $font-size-base * 0.8125,
+);
+
+$spacer: 1rem; // 16px
 $spacers: (
   0: 0,
+  // 4px
   1: $spacer * 0.25,
+  // 8px
   2: $spacer * 0.5,
   3: $spacer,
+  // 24px
   4: $spacer * 1.5,
+  // 48px
   5: $spacer * 3,
+  // 80px
   6: $spacer * 5,
+  // 10px
+  10: $spacer * 0.625,
+  // 20px
+  20: $spacer * 1.25,
+  // 40px
+  40: $spacer * 2.5,
 );
