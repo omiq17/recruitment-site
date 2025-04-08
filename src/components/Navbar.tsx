@@ -1,4 +1,5 @@
-import { MENU_ITEMS } from "@/lib/consts";
+import { MAX_CONTENT_WIDTH } from "@/lib/consts";
+import { MENU_ITEMS } from "@/lib/data";
 
 const renderDropdown = (item: MenuItem) => {
   return (
@@ -29,10 +30,13 @@ const renderDropdown = (item: MenuItem) => {
 
 export default function Navbar() {
   return (
-    <div className="container-fluid ">
-      <div className="container-fluid g-0" style={{ maxWidth: "1200px" }}>
+    <div className="container-fluid">
+      <div
+        className="container-fluid g-0"
+        style={{ maxWidth: MAX_CONTENT_WIDTH }}
+      >
         <nav className="navbar navbar-expand-lg">
-          <div className="container-fluid">
+          <div className="container-fluid g-0">
             <a className="navbar-brand" href="#" style={{ marginRight: "5vw" }}>
               Software Recruitment Co.
             </a>

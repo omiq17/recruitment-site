@@ -1,0 +1,123 @@
+export const MENU_ITEMS = [
+  {
+    name: "For jobseekers",
+    link: "#",
+    subItems: [
+      { name: "Resume tips", link: "#" },
+      { name: "Job interview advice", link: "#" },
+      { name: "Career coaching", link: "#" },
+    ],
+  },
+  {
+    name: "For clients",
+    link: "#",
+    subItems: [
+      { name: "Post a job", link: "#" },
+      { name: "View applicants", link: "#" },
+      { name: "Client testimonials", link: "#" },
+      { name: "Recruitment services", link: "#" },
+    ],
+  },
+  {
+    name: "Sectors",
+    link: "#",
+    subItems: [
+      { name: "IT & Software", link: "#" },
+      { name: "Marketing & Sales", link: "#" },
+      { name: "Engineering", link: "#" },
+    ],
+  },
+  {
+    name: "Resources",
+    link: "#",
+    subItems: [
+      { name: "Blog", link: "#" },
+      { name: "E-books", link: "#" },
+      { name: "Webinars", link: "#" },
+      { name: "Case studies", link: "#" },
+    ],
+  },
+];
+
+export const JOBS = [
+  {
+    id: 1,
+    title: "Frontend Developer",
+    company: "TechNova",
+    location: "Kuala Lumpur, Malaysia",
+    postedAt: "2 days ago",
+    type: "Full-time",
+  },
+  {
+    id: 2,
+    title: "Backend Engineer",
+    company: "CloudBridge",
+    location: "Remote",
+    postedAt: "1 day ago",
+    type: "Contract",
+  },
+  {
+    id: 3,
+    title: "Data Analyst",
+    company: "FinSights",
+    location: "Singapore",
+    postedAt: "3 days ago",
+    type: "Full-time",
+  },
+  {
+    id: 4,
+    title: "UI/UX Designer",
+    company: "CreativeWorks",
+    location: "Penang, Malaysia",
+    postedAt: "5 hours ago",
+    type: "Part-time",
+  },
+  {
+    id: 5,
+    title: "Full Stack Developer",
+    company: "InnoSoft",
+    location: "Jakarta, Indonesia",
+    postedAt: "4 days ago",
+    type: "Full-time",
+  },
+  {
+    id: 6,
+    title: "Project Manager",
+    company: "AgilePro",
+    location: "Bangkok, Thailand",
+    postedAt: "6 hours ago",
+    type: "Full-time",
+  },
+  {
+    id: 7,
+    title: "DevOps Engineer",
+    company: "DeployZone",
+    location: "Remote",
+    postedAt: "12 hours ago",
+    type: "Full-time",
+  },
+  {
+    id: 8,
+    title: "Mobile App Developer",
+    company: "Appify",
+    location: "Hanoi, Vietnam",
+    postedAt: "1 week ago",
+    type: "Internship",
+  },
+  {
+    id: 9,
+    title: "QA Tester",
+    company: "BugHunterz",
+    location: "Kuala Lumpur, Malaysia",
+    postedAt: "2 days ago",
+    type: "Full-time",
+  },
+  {
+    id: 10,
+    title: "Machine Learning Engineer",
+    company: "AI Nexus",
+    location: "Singapore",
+    postedAt: "3 hours ago",
+    type: "Full-time",
+  },
+];

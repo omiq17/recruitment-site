@@ -53,7 +53,7 @@
   --bs-danger-text-emphasis: rgb(88, 21.2, 27.6);
   --bs-light-text-emphasis: #495057;
   --bs-dark-text-emphasis: #495057;
-  --bs-primary-bg-subtle: rgb(205.2, 219.6, 236.8);
+  --bs-primary-bg-subtle: #d7e7fb;
   --bs-secondary-bg-subtle: rgb(254.4, 248.6, 225);
   --bs-success-bg-subtle: rgb(209, 231, 220.8);
   --bs-info-bg-subtle: rgb(206.6, 244.4, 252);
@@ -92,7 +92,7 @@
   --bs-tertiary-color-rgb: 33, 37, 41;
   --bs-tertiary-bg: #f8f9fa;
   --bs-tertiary-bg-rgb: 248, 249, 250;
-  --bs-heading-color: inherit;
+  --bs-heading-color: #064ea4;
   --bs-link-color: #064ea4;
   --bs-link-color-rgb: 6, 78, 164;
   --bs-link-decoration: underline;
@@ -217,35 +217,35 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
+  font-weight: 700;
+  line-height: 1.5;
   color: var(--bs-heading-color);
 }
 
 h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(1.5375rem + 3.45vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 4.125rem;
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: calc(1.475rem + 2.7vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
 }
 
 h3, .h3 {
-  font-size: calc(1.3rem + 0.6vw);
+  font-size: calc(1.3125rem + 0.75vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 1.75rem;
+    font-size: 1.875rem;
   }
 }
 
@@ -595,7 +595,7 @@ progress {
 
 .display-1 {
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.5;
   font-size: calc(1.625rem + 4.5vw);
 }
 @media (min-width: 1200px) {
@@ -606,7 +606,7 @@ progress {
 
 .display-2 {
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.5;
   font-size: calc(1.575rem + 3.9vw);
 }
 @media (min-width: 1200px) {
@@ -617,7 +617,7 @@ progress {
 
 .display-3 {
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.5;
   font-size: calc(1.525rem + 3.3vw);
 }
 @media (min-width: 1200px) {
@@ -628,7 +628,7 @@ progress {
 
 .display-4 {
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.5;
   font-size: calc(1.475rem + 2.7vw);
 }
 @media (min-width: 1200px) {
@@ -639,7 +639,7 @@ progress {
 
 .display-5 {
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.5;
   font-size: calc(1.425rem + 2.1vw);
 }
 @media (min-width: 1200px) {
@@ -650,7 +650,7 @@ progress {
 
 .display-6 {
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.5;
   font-size: calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
@@ -5790,7 +5790,7 @@ textarea.form-control-lg {
   --bs-popover-header-padding-x: 1rem;
   --bs-popover-header-padding-y: 0.5rem;
   --bs-popover-header-font-size: 1rem;
-  --bs-popover-header-color: inherit;
+  --bs-popover-header-color: #064ea4;
   --bs-popover-header-bg: var(--bs-secondary-bg);
   --bs-popover-body-padding-x: 1rem;
   --bs-popover-body-padding-y: 1rem;
@@ -8240,15 +8240,15 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-  font-size: calc(1.375rem + 1.5vw) !important;
+  font-size: calc(1.5375rem + 3.45vw) !important;
 }
 
 .fs-2 {
-  font-size: calc(1.325rem + 0.9vw) !important;
+  font-size: calc(1.475rem + 2.7vw) !important;
 }
 
 .fs-3 {
-  font-size: calc(1.3rem + 0.6vw) !important;
+  font-size: calc(1.3125rem + 0.75vw) !important;
 }
 
 .fs-4 {
@@ -11803,13 +11803,13 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 2.5rem !important;
+    font-size: 4.125rem !important;
   }
   .fs-2 {
-    font-size: 2rem !important;
+    font-size: 3.5rem !important;
   }
   .fs-3 {
-    font-size: 1.75rem !important;
+    font-size: 1.875rem !important;
   }
   .fs-4 {
     font-size: 1.5rem !important;
