@@ -8,6 +8,7 @@ import { MAX_CONTENT_WIDTH } from "@/lib/consts";
 import { getCardBackgroundColor, getCardTextColor } from "@/lib/utils";
 import LocationIcon from "@/assets/LocationIcon";
 import PoundIcon from "@/assets/PoundIcon";
+import Image from "next/image";
 
 const Jobs = () => {
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
@@ -37,6 +38,14 @@ const Jobs = () => {
                   i
                 )} d-flex flex-column gap-3 m-40 justify-content-between`}
               >
+                <img
+                  src={job.iconSrc}
+                  alt={job.technology}
+                  width="75"
+                  height="24"
+                  className="rounded-1"
+                />
+
                 <h3 className={`card-title m-0`}>{job.title}</h3>
 
                 <div className={`d-flex flex-column gap-10`}>

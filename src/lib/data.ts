@@ -48,6 +48,8 @@ export const JOBS = [
     description:
       "Craft dynamic, responsive interfaces using React and TypeScript. Collaborate with UI/UX teams to enhance user experience.",
     date: "02/04/2025",
+    iconSrc:
+      "https://img.shields.io/badge/React.js-ffffff?style=for-the-badge&logo=react&logoColor=064EA4",
   },
   {
     technology: "Node.js",
@@ -57,6 +59,8 @@ export const JOBS = [
     description:
       "Build and maintain robust APIs with Node.js and Express. Optimize backend performance and integrate third-party services.",
     date: "03/04/2025",
+    iconSrc:
+      "https://img.shields.io/badge/Node.js-ffffff?style=for-the-badge&logo=node.js&logoColor=064EA4",
   },
   {
     technology: "Python",
@@ -66,24 +70,30 @@ export const JOBS = [
     description:
       "Interpret data trends to support business decisions. Design insightful dashboards with visualization tools.",
     date: "04/04/2025",
+    iconSrc:
+      "https://img.shields.io/badge/Python-ffffff?style=for-the-badge&logo=python&logoColor=064EA4",
   },
   {
-    technology: "Java",
-    title: "Software Engineer",
+    technology: "Node.js",
+    title: "Node.js Developer",
     location: "Leeds",
     salary: "£68,000",
     description:
-      "Develop scalable backend systems using Java and Spring. Participate in code reviews and agile development processes.",
+      "Develop scalable backend systems using Node.js. Participate in code reviews and agile development processes.",
     date: "05/04/2025",
+    iconSrc:
+      "https://img.shields.io/badge/node.js-ffffff?style=for-the-badge&logo=node.js&logoColor=064EA4",
   },
   {
-    technology: "AWS",
-    title: "Cloud Architect",
-    location: "Bristol",
-    salary: "£90,000",
+    technology: "Python",
+    title: "Data Scientist",
+    location: "Manchester",
+    salary: "£80,000",
     description:
-      "Design secure and scalable AWS infrastructures. Automate deployments and enforce best cloud practices.",
+      "Develop machine learning models and analyze complex datasets. Work with business stakeholders to extract actionable insights.",
     date: "06/04/2025",
+    iconSrc:
+      "https://img.shields.io/badge/Python-ffffff?style=for-the-badge&logo=python&logoColor=064EA4",
   },
   {
     technology: "Angular",
@@ -93,6 +103,8 @@ export const JOBS = [
     description:
       "Create modular Angular components for enterprise apps. Ensure high performance across browsers and platforms.",
     date: "07/04/2025",
+    iconSrc:
+      "https://img.shields.io/badge/Angular-ffffff?style=for-the-badge&logo=angular&logoColor=064EA4",
   },
   {
     technology: "DevOps",
@@ -102,15 +114,19 @@ export const JOBS = [
     description:
       "Manage CI/CD workflows and automate infrastructure. Monitor production systems for reliability and uptime.",
     date: "08/04/2025",
+    iconSrc:
+      "https://img.shields.io/badge/DevOps-ffffff?style=for-the-badge&logo=devops&logoColor=064EA4",
   },
   {
     technology: "SQL",
-    title: "Database Administrator",
+    title: "SQL Developer",
     location: "Nottingham",
     salary: "£58,000",
     description:
       "Tune and secure SQL databases for high availability. Handle data migrations and performance diagnostics.",
     date: "09/04/2025",
+    iconSrc:
+      "https://img.shields.io/badge/SQL-ffffff?style=for-the-badge&logo=mysql&logoColor=064EA4",
   },
   {
     technology: "Flutter",
@@ -120,5 +136,7 @@ export const JOBS = [
     description:
       "Build cross-platform mobile apps with Flutter and Dart. Collaborate with designers to implement app features.",
     date: "10/04/2025",
+    iconSrc:
+      "https://img.shields.io/badge/Flutter-ffffff?style=for-the-badge&logo=flutter&logoColor=064EA4",
   },
 ];
