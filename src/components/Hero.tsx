@@ -55,7 +55,7 @@ const Hero = () => {
                     placeholder="E.g. networking"
                     aria-label="Job search"
                   />
-                  <button className="btn btn-secondary px-4" type="button">
+                  <button className="btn btn-secondary px-4 z-3" type="button">
                     Search jobs
                   </button>
                 </div>

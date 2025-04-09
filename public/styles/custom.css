@@ -9784,11 +9784,11 @@ textarea.form-control-lg {
 }
 
 .z-2 {
-  z-index: 2 !important;
+  z-index: 5 !important;
 }
 
 .z-3 {
-  z-index: 3 !important;
+  z-index: 10 !important;
 }
 
 @media (min-width: 576px) {
