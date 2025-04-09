@@ -14276,4 +14276,8 @@ h3, .h3 {
   color: #451b09;
 }
 
+.form-control::placeholder {
+  color: #aaaaaa;
+}
+
 /*# sourceMappingURL=custom.css.map */
