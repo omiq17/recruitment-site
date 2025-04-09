@@ -11,6 +11,7 @@
     "watch:styles": "sass --watch src/styles/custom.scss:public/styles/custom.css"
   },
   "dependencies": {
+    "@lobehub/icons": "^1.95.0",
     "bootstrap": "^5.3.5",
     "keen-slider": "^6.8.6",
     "next": "15.2.4",
