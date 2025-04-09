@@ -39,7 +39,7 @@ const Jobs = () => {
         className="container-fluid g-0 py-6"
         style={{ maxWidth: MAX_CONTENT_WIDTH }}
       >
-        <h2 className="mb-4 text-center text-info">Latest Jobs</h2>
+        <h2 className="mb-30 text-center text-info">Latest Jobs</h2>
 
         <div ref={sliderRef} className="keen-slider">
           {JOBS.map((job, i) => (
@@ -105,7 +105,7 @@ const Jobs = () => {
           ))}
         </div>
 
-        <div className="mt-3 d-flex justify-content-between align-items-center">
+        <div className="mt-30 d-flex justify-content-between align-items-center">
           <div className="d-flex gap-3">
             <LeftArrowIcon
               fillOpacity={
