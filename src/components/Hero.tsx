@@ -4,7 +4,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div
-      id="footer"
+      id="hero"
       className="container-fluid bg-primary position-relative overflow-hidden"
     >
       {/* Circle - top left */}
@@ -51,7 +51,7 @@ const Hero = () => {
                 <div className="input-group mb-3">
                   <input
                     type="text"
-                    className="form-control py-3"
+                    className="form-control p-3 fw-bold lh-base"
                     placeholder="E.g. networking"
                     aria-label="Job search"
                   />

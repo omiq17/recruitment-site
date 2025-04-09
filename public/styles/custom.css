@@ -14270,4 +14270,10 @@ h3, .h3 {
   line-height: 1;
 }
 
+.btn-primary,
+.btn-secondary,
+.btn-warning {
+  color: #451b09;
+}
+
 /*# sourceMappingURL=custom.css.map */
