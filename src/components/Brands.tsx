@@ -54,12 +54,12 @@ const Brands = () => {
   }, [slider]);
 
   return (
-    <div className="container-fluid bg-white border-top border-bottom">
+    <div className="container-fluid bg-white">
       <div
         className="container-fluid g-0 py-60"
         style={{ maxWidth: MAX_CONTENT_WIDTH }}
       >
-        <p className="mb-30 text-center fs-7 lh-base fw-bold text-light">
+        <p className="mb-30 text-center fs-6 lh-base fw-bold text-light-emphasis">
           Who we work with
         </p>
 
