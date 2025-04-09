@@ -59,7 +59,10 @@ const Brands = () => {
         className="container-fluid g-0 py-60"
         style={{ maxWidth: MAX_CONTENT_WIDTH }}
       >
-        <p className="mb-30 text-center fs-6 lh-base fw-bold text-light-emphasis">
+        <p
+          className="mb-30 text-center fs-6 lh-base fw-bold text-light-emphasis"
+          style={{ letterSpacing: "-1px" }}
+        >
           Who we work with
         </p>
 
