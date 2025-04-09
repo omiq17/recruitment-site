@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { JOBS } from "@/lib/data";
@@ -8,15 +8,29 @@ import { MAX_CONTENT_WIDTH } from "@/lib/consts";
 import { getCardBackgroundColor, getCardTextColor } from "@/lib/utils";
 import LocationIcon from "@/assets/LocationIcon";
 import PoundIcon from "@/assets/PoundIcon";
-import Image from "next/image";
+import LeftArrowIcon from "@/assets/LeftArrowIcon";
+import RightArrowIcon from "@/assets/RightArrowIcon";
+import { TrackDetails } from "keen-slider";
 
 const Jobs = () => {
+  const [sliderDetails, setSliderDetails] = useState<TrackDetails>();
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
-    slides: {
-      perView: 3,
-      spacing: 40,
+    breakpoints: {
+      "(min-width: 600px)": {
+        slides: { perView: 2, spacing: 30 },
+      },
+      "(min-width: 1000px)": {
+        slides: { perView: 3, spacing: 40 },
+      },
     },
-    loop: true,
+    slides: {
+      perView: 1,
+      spacing: 15,
+    },
+    loop: false,
+    slideChanged(slider) {
+      setSliderDetails(slider.track.details);
+    },
   });
 
   return (
@@ -43,7 +57,7 @@ const Jobs = () => {
                   alt={job.technology}
                   width="75"
                   height="24"
-                  className="rounded-1"
+                  className="rounded-2"
                 />
 
                 <h3 className={`card-title m-0`}>{job.title}</h3>
@@ -92,25 +106,31 @@ const Jobs = () => {
         </div>
 
         <div className="mt-3 d-flex justify-content-between align-items-center">
-          <div className="arrow-controls">
-            <button
-              className="btn btn-outline-primary me-2"
+          <div className="d-flex gap-3">
+            <LeftArrowIcon
+              fillOpacity={
+                sliderDetails === undefined
+                  ? 0.5
+                  : sliderDetails.minIdx === sliderDetails.rel
+                  ? 0.5
+                  : 1
+              }
               onClick={() => instanceRef.current?.prev()}
-            >
-              ←
-            </button>
-            <button
-              className="btn btn-outline-primary"
+            />
+            <RightArrowIcon
+              fillOpacity={
+                sliderDetails && sliderDetails.maxIdx === sliderDetails.rel
+                  ? 0.5
+                  : 1
+              }
               onClick={() => instanceRef.current?.next()}
-            >
-              →
-            </button>
+            />
           </div>
 
           <p>
             <a
               href="#"
-              className="link-underline-light text-dark m-0 fw-medium lh-base fh-6"
+              className="link-underline link-underline-opacity-0 text-dark m-0 fw-medium lh-base fh-6"
             >
               View more jobs
             </a>
