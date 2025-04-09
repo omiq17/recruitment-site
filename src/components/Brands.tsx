@@ -16,10 +16,10 @@ import {
   Vercel,
 } from "@lobehub/icons";
 
-const slideStyleClasses =
-  "keen-slider__slide justify-content-center justify-content-sm-start ";
-
 const Brands = () => {
+  const slideStyle =
+    "keen-slider__slide justify-content-center justify-content-sm-start ";
+
   const timer = useRef<NodeJS.Timeout | null>(null);
   const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
     breakpoints: {
@@ -64,40 +64,16 @@ const Brands = () => {
         </p>
 
         <div ref={sliderRef} className="keen-slider">
-          <Microsoft.Combine
-            className={slideStyleClasses}
-            size={40}
-            type={"color"}
-          />
-          <Meta.Combine
-            className={slideStyleClasses}
-            size={40}
-            type={"color"}
-          />
-          <Cloudflare.Combine
-            className={slideStyleClasses}
-            size={40}
-            type={"color"}
-          />
-          <Google.BrandColor
-            className={slideStyleClasses}
-            size={40}
-            type={"color"}
-          />
-          <Aws.Combine className={slideStyleClasses} size={40} type="color" />
-          <Adobe.Combine
-            className={slideStyleClasses}
-            size={40}
-            type={"color"}
-          />
+          <Microsoft.Combine className={slideStyle} size={40} type={"color"} />
+          <Meta.Combine className={slideStyle} size={40} type={"color"} />
+          <Cloudflare.Combine className={slideStyle} size={40} type={"color"} />
+          <Google.BrandColor className={slideStyle} size={40} type={"color"} />
+          <Aws.Combine className={slideStyle} size={40} type="color" />
+          <Adobe.Combine className={slideStyle} size={40} type={"color"} />
 
-          <Vercel.Combine className={slideStyleClasses} size={40} />
-          <Replit.Combine
-            className={slideStyleClasses}
-            size={40}
-            type={"color"}
-          />
-          <Notion.Combine className={slideStyleClasses} size={40} />
+          <Vercel.Combine className={slideStyle} size={40} />
+          <Replit.Combine className={slideStyle} size={40} type={"color"} />
+          <Notion.Combine className={slideStyle} size={40} />
         </div>
       </div>
     </div>

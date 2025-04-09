@@ -1,4 +1,5 @@
 import Brands from "@/components/Brands";
+import Footer from "@/components/Footer";
 import Jobs from "@/components/Jobs";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div>
       <Brands />
       <Jobs />
+      <Footer />
     </div>
   );
 }
