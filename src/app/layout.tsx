@@ -26,6 +26,7 @@ export default function RootLayout({
       <head>
         <title>Recruitment Site Application</title>
         <meta name="description" content="A better way to recruit." />
+        <link rel="icon" href="/icon.ico" />
         <link rel="stylesheet" href="/styles/custom.css" />
       </head>
       <body className={`${roboto.variable} antialiased`}>
