@@ -14,8 +14,8 @@ const Hero = () => {
           width: "290px",
           height: "290px",
           borderRadius: "50%",
-          top: "-125px",
-          left: "-125px",
+          top: "-115px",
+          left: "-150px",
           zIndex: "0",
         }}
       ></div>
@@ -27,8 +27,8 @@ const Hero = () => {
           width: "290px",
           height: "290px",
           borderRadius: "50%",
-          bottom: "-75px",
-          right: "-50px",
+          bottom: "-90px",
+          right: "-65px",
           zIndex: "0",
         }}
       ></div>
