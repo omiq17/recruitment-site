@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Roboto } from "next/font/google";
 import "@/styles/globals.css";
 import "keen-slider/keen-slider.min.css";
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <BootstrapClient />
+        <Analytics />
       </body>
     </html>
   );
