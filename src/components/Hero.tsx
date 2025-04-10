@@ -39,7 +39,7 @@ const Hero = () => {
       >
         <div className="py-30">
           <div className="row g-0 align-items-center justify-content-center">
-            <div className="col-lg-6 text-white pe-3 z-1 w-max">
+            <div className="col-lg-6 text-white ps-2 pe-2 ps-lg-0 pe-lg-3 z-1 w-max w-lg-auto">
               <p className="fs-6 lh-base mb-1">
                 Software Recruitment Specialists
               </p>
@@ -73,7 +73,7 @@ const Hero = () => {
             >
               <div
                 className="overflow-hidden"
-                style={{ maxWidth: "507px", margin: "0 auto" }}
+                style={{ maxWidth: "31.6875rem", margin: "0 auto" }}
               >
                 <Image
                   src="/hero-image.png"
