@@ -3,7 +3,7 @@
 import { MAX_CONTENT_WIDTH } from "@/lib/consts";
 import dynamic from "next/dynamic";
 
-const BrandsSlider = dynamic(() => import("@/components/BrandsSlider"), {
+const BrandsSlider = dynamic(() => import("@/components/brands/BrandsSlider"), {
   ssr: false,
 });
 

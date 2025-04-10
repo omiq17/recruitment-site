@@ -1,7 +1,7 @@
-import Brands from "@/components/Brands";
+import Brands from "@/components/brands/Brands";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
-import Jobs from "@/components/Jobs";
+import Jobs from "@/components/jobs/Jobs";
 
 export default function Home() {
   return (

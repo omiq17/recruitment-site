@@ -4,7 +4,7 @@ import React from "react";
 import { MAX_CONTENT_WIDTH } from "@/lib/consts";
 import dynamic from "next/dynamic";
 
-const JobCards = dynamic(() => import("@/components/JobCards"), {
+const JobCards = dynamic(() => import("@/components/jobs/JobCards"), {
   ssr: false,
 });
 
