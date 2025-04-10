@@ -1,5 +1,5 @@
-import { MAX_CONTENT_WIDTH } from "@/lib/consts";
 import Image from "next/image";
+import { MAX_CONTENT_WIDTH } from "@/lib/consts";
 
 const Hero = () => {
   return (
@@ -40,24 +40,29 @@ const Hero = () => {
         <div className="py-30">
           <div className="row g-0 align-items-center">
             <div className="col-lg-6 text-white pe-3" style={{ zIndex: "1" }}>
-              <p className="mb-3 fs-6 ls-base">
+              <p className="fs-6 lh-base mb-1">
                 Software Recruitment Specialists
               </p>
-              <h1 className="display-4 fw-bold lh-base mb-3">
-                Elevate your career
-              </h1>
 
-              <div className="d-flex">
-                <div className="input-group mb-3">
-                  <input
-                    type="text"
-                    className="form-control p-3 fw-bold lh-base"
-                    placeholder="E.g. networking"
-                    aria-label="Job search"
-                  />
-                  <button className="btn btn-secondary px-4 z-3" type="button">
-                    Search jobs
-                  </button>
+              <div className="d-inline-block">
+                <h1 className="display-4 fw-bold lh-base mb-3">
+                  Elevate your career
+                </h1>
+                <div className="d-flex">
+                  <div className="input-group mb-3">
+                    <input
+                      type="text"
+                      className="form-control p-3 fw-bold lh-base"
+                      placeholder="E.g. networking"
+                      aria-label="Job search"
+                    />
+                    <button
+                      className="btn btn-secondary px-4 z-3"
+                      type="button"
+                    >
+                      Search jobs
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
