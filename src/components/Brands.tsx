@@ -18,7 +18,7 @@ import {
 
 const Brands = () => {
   const slideStyle =
-    "keen-slider__slide justify-content-center justify-content-sm-start ";
+    "keen-slider__slide justify-content-center justify-content-lg-start ";
 
   const timer = useRef<NodeJS.Timeout | null>(null);
   const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
