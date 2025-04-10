@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import "keen-slider/keen-slider.min.css";
 import { MAX_CONTENT_WIDTH } from "@/lib/consts";
 import dynamic from "next/dynamic";
 
