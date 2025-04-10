@@ -14280,4 +14280,8 @@ h3, .h3 {
   color: #aaaaaa;
 }
 
+.w-max {
+  width: max-content;
+}
+
 /*# sourceMappingURL=custom.css.map */

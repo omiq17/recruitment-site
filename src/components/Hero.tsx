@@ -38,13 +38,13 @@ const Hero = () => {
         style={{ maxWidth: MAX_CONTENT_WIDTH }}
       >
         <div className="py-30">
-          <div className="row g-0 align-items-center">
-            <div className="col-lg-6 text-white pe-3" style={{ zIndex: "1" }}>
+          <div className="row g-0 align-items-center justify-content-center">
+            <div className="col-lg-6 text-white pe-3 z-1 w-max">
               <p className="fs-6 lh-base mb-1">
                 Software Recruitment Specialists
               </p>
 
-              <div className="d-inline-block">
+              <div className="d-inline-block w-max">
                 <h1 className="display-4 fw-bold lh-base mb-3">
                   Elevate your career
                 </h1>
