@@ -27,8 +27,8 @@ const Hero = () => {
           width: "290px",
           height: "290px",
           borderRadius: "50%",
-          bottom: "-90px",
-          right: "-65px",
+          bottom: "-115px",
+          right: "-45px",
           zIndex: "0",
         }}
       ></div>
@@ -38,7 +38,7 @@ const Hero = () => {
         style={{ maxWidth: MAX_CONTENT_WIDTH }}
       >
         <div className="py-30">
-          <div className="row g-0 align-items-center justify-content-center">
+          <div className="row g-0 align-items-center justify-content-center justify-content-lg-between">
             <div className="col-lg-6 text-white ps-2 pe-2 ps-lg-0 pe-lg-3 z-1 w-max w-lg-auto">
               <p className="fs-6 lh-base mb-1">
                 Software Recruitment Specialists
