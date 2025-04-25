@@ -80,6 +80,7 @@ const Hero = () => {
                   alt="Hero Image"
                   width={640}
                   height={676}
+                  className="rounded-5"
                   style={{ width: "100%", height: "auto" }}
                   priority
                 />
